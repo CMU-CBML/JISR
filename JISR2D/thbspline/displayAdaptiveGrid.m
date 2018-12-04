@@ -1,8 +1,12 @@
+function [] = displayAdaptiveGrid(ac,Coeff,Em,knotvectorU,knotvectorV,Jm,Pmold,parameters,nx,ny)
+
 figure;
+ac_ct = size(ac,1);
 CF = cell(ac_ct,1);
+pU = parameters.pU;
+pV = parameters.pV;
 
-
-for i = 1:ac_ct,
+for i = 1:ac_ct
     cell_ind = ac(i,1);
     cell_lev = ac(i,2);
     c1 = Coeff{i,1};
@@ -80,5 +84,5 @@ for i = 1:ac_ct,
     CF{i,1} = cfx;
     % end
 end
-
 hold off
+end

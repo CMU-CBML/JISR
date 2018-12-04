@@ -1,5 +1,12 @@
+function [Jm,Coeff,Pixel,HH,PHI,PHIU,PHIV,BIGX,BIGY] = constructAdaptiveGrid(ac,parameters,Dm,Em,M,knotvectorU,knotvectorV,multilev,nobU,nobV,nelemU)
+
+ac_ct = size(ac,1);
+maxlev=size(knotvectorU,1);
 Jm = cell(ac_ct,1);
 orderGauss = parameters.orderGauss;
+pU = parameters.pU;
+pV = parameters.pV;
+[Vx_ident, Vy_ident] = meshgrid((0.5:size(M,1)-0.5),(0.5:size(M,2)-0.5));
 
 for i = 1:ac_ct,
     
@@ -280,5 +287,6 @@ for i = 1:ac_ct,
     PHI{i,1} = g_phi;
     PHIU{i,1} = g_phiu;
     PHIV{i,1} = g_phiv;
+end
 end
 

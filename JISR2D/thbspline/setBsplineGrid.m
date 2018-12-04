@@ -1,5 +1,5 @@
-Bvectf = cell(maxlev,1);
-Bvectb = cell(maxlev,1);
+function [Dm,Pm,Em,Bvect,knotvectorU,knotvectorV,nobU,nobV,nelemU] = setBsplineGrid(maxlev,parameters,F)
+
 CP = cell(maxlev,1);
 
 knotvectorU = cell(maxlev,1);
@@ -296,4 +296,5 @@ end
 
 CP{1,1} = pp;
 Pm = CP;
-Pmold = Pm;
+
+end
