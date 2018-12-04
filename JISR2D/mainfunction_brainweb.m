@@ -15,8 +15,8 @@ addpath('../JISR2Dcopy/postprocessing');
 parameters = setparameters_brainweb();
 
 %% Read Image, Initialize
-filenameI0='msles.rawb';
-filenamephi1 = 'msles_wht.rawb';
+filenameI0='phantom_1.0mm_msles3_crisp.rawb';
+filenamephi1 = 'phantom_1.0mm_msles3_wht.rawb';
 [I1,I2] = read3DImage_brainWeb(filenameI0,filenameI0);
 [phi1,phi1] = read3DImage_brainWeb_phi(filenamephi1,filenamephi1);
 
