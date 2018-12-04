@@ -9,22 +9,22 @@ orderGauss = 6;
 maxlevel = 3;
 
 lambda1 = 0.01;
-lambda2 = 0;
+lambda2 = 0.01;
 lambda3 = 0.01;
 
 maxiteration = 50;
 
-timestep(1,1) = 0.80;
-timestep(2,1) = 0.20;
-timestep(3,1) = 0.20;
+timestep(1,1) = 0.50;
+timestep(2,1) = 0.50;
+timestep(3,1) = 0.50;
 
-nelemx = 25;
-nelemy = 25;
+nelemx = 30;
+nelemy = 30;
 
 pU = 3;
 pV = 3;
 
-par1 = 1;
+par1 = 0.5;
 par2 = 2;
 
 parameters = struct('pU',pU,'pV',pV,'maxlevel',maxlevel,'nelemx',nelemx,'nelemy',nelemy,...

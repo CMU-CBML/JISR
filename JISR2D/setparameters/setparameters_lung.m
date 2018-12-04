@@ -15,8 +15,8 @@ lambda3 = 0.01;
 maxiteration = 50;
 
 timestep(1,1) = 0.10;
-timestep(2,1) = 0.05;
-timestep(3,1) = 0.05;
+timestep(2,1) = 0.10;
+timestep(3,1) = 0.20;
 
 nelemx = 30;
 nelemy = 30;
