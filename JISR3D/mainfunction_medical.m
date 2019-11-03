@@ -5,7 +5,16 @@ close all
 
 %% Read Image, Initialize
 tic
-addpath('../3D_adaptive_image_registration73/images3D');
+path = pwd;
+addpath(strcat(path,'/images3D'));
+addpath(strcat(path,'/bsplinelevelset'));
+addpath(strcat(path,'/iterationloop_funcs'));
+addpath(strcat(path,'/levelsetseg'));
+addpath(strcat(path,'/postprocessing'));
+addpath(strcat(path,'/readimg'));
+addpath(strcat(path,'/setparameters'));
+addpath(strcat(path,'/thbspline'));
+addpath(strcat(path,'/medical_image'));
 % if computing Dice Similarity for medical images from Brainweb, setflagDS
 % = 1;
 setflagDS = 0;
