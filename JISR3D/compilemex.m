@@ -92,178 +92,178 @@ ARGS5{1}{4} = coder.typeof(0,[Inf  4],[1 0]);
 %% Invoke MATLAB Coder.
 codegen -config cfg tripleIterLoop -args ARGS5{1}
 
-%% Define argument types for entry-point 'compute_Integ_Domainf'.
-ARGS6 = cell(1,1);
-ARGS6{1} = cell(50,1);
-ARGS6{1}{1} = struct;
-ARGS6{1}{1}.nzsplines = coder.typeof(int64(0),[Inf  1],[1 0]);
-ARGS6{1}{1} = coder.typeof(ARGS6{1}{1},[Inf  1],[1 0]);
-
-ARGS6{1}{2} = coder.typeof(0,[Inf  4  4],[1 0 0]);
-ARGS6{1}{3} = coder.typeof(0,[Inf  4  4],[1 0 0]);
-ARGS6{1}{4} = coder.typeof(0,[Inf  4  4],[1 0 0]);
-ARGS6{1}{5} = coder.typeof(0,[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{6} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{7} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{8} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{9} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{10} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{11} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{12} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{13} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{14} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{15} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{16} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{17} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{18} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{19} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{20} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{21} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{22} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{23} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{24} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{25} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{26} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{27} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{28} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{29} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{30} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{31} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{32} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{33} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{34} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS6{1}{35} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS6{1}{36} = coder.typeof(0,[Inf  4],[1 0]);
-
-ARGS6{1}{37} = struct;
-ARGS6{1}{37}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS6{1}{37} = coder.typeof(ARGS6{1}{37},[Inf  1],[1 0]);
-
-ARGS6{1}{38} = struct;
-ARGS6{1}{38}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS6{1}{38} = coder.typeof(ARGS6{1}{38},[Inf  1],[1 0]);
-
-ARGS6{1}{39} = struct;
-ARGS6{1}{39}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS6{1}{39} = coder.typeof(ARGS6{1}{39},[Inf  1],[1 0]);
-
-ARGS6{1}{40} = struct;
-ARGS6{1}{40}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS6{1}{40} = coder.typeof(ARGS6{1}{40},[Inf  1],[1 0]);
-
-ARGS6{1}{41} = struct;
-ARGS6{1}{41}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS6{1}{41} = coder.typeof(ARGS6{1}{41},[Inf  1],[1 0]);
-
-ARGS6{1}{42} = coder.typeof(0);
-ARGS6{1}{43} = coder.typeof(0);
-ARGS6{1}{44} = coder.typeof(0);
-
-ARGS6{1}{45} = coder.typeof(0);
-ARGS6{1}{46} = coder.typeof(0);
-
-ARGS6{1}{47} = coder.typeof(0,[Inf  1],[1 0]);
-ARGS6{1}{48} = coder.typeof(0,[Inf  1],[1 0]);
-ARGS6{1}{49} = coder.typeof(0,[Inf  1],[1 0]);
-
-ARGS6{1}{50} = coder.typeof(single(0),[Inf  3],[1 0]);
-%% Invoke MATLAB Coder.
-codegen -config cfg compute_Integ_Domainf_mod -args ARGS6{1}
-
-%% Define argument types for entry-point 'compute_Integ_Domainb_mod'.
-ARGS7 = cell(1,1);
-ARGS7{1} = cell(45,1);
-ARGS7{1}{1} = struct;
-ARGS7{1}{1}.nzsplines = coder.typeof(int64(0),[Inf  1],[1 0]);
-ARGS7{1}{1} = coder.typeof(ARGS7{1}{1},[Inf  1],[1 0]);
-
-ARGS7{1}{2} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{3} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{4} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{5} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{6} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{7} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{8} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{9} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{10} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{11} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{12} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{13} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{14} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{15} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{16} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{17} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{18} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{19} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{20} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{21} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{22} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{23} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{24} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{25} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{26} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{27} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{28} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{29} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{30} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-ARGS7{1}{31} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
-
-ARGS7{1}{32} = coder.typeof(0,[Inf  4],[1 0]);
-
-ARGS7{1}{33} = struct;
-ARGS7{1}{33}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS7{1}{33} = coder.typeof(ARGS7{1}{33},[Inf  1],[1 0]);
-
-ARGS7{1}{34} = struct;
-ARGS7{1}{34}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS7{1}{34} = coder.typeof(ARGS7{1}{34},[Inf  1],[1 0]);
-
-ARGS7{1}{35} = struct;
-ARGS7{1}{35}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS7{1}{35} = coder.typeof(ARGS7{1}{35},[Inf  1],[1 0]);
-
-ARGS7{1}{36} = struct;
-ARGS7{1}{36}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS7{1}{36} = coder.typeof(ARGS7{1}{36},[Inf  1],[1 0]);
-
-ARGS7{1}{37} = struct;
-ARGS7{1}{37}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
-ARGS7{1}{37} = coder.typeof(ARGS7{1}{37},[Inf  1],[1 0]);
-
-ARGS7{1}{38} = coder.typeof(0);
-ARGS7{1}{39} = coder.typeof(0);
-
-ARGS7{1}{40} = coder.typeof(0);
-
-ARGS7{1}{41} = coder.typeof(0);
-
-ARGS7{1}{42} = coder.typeof(0,[Inf  1],[1 0]);
-ARGS7{1}{43} = coder.typeof(0,[Inf  1],[1 0]);
-ARGS7{1}{44} = coder.typeof(0,[Inf  1],[1 0]);
-
-ARGS7{1}{45} = coder.typeof(single(0),[Inf  3],[1 0]);
-%% Invoke MATLAB Coder.
-codegen -config cfg compute_Integ_Domainb_mod -args ARGS7{1}
+% %% Define argument types for entry-point 'compute_Integ_Domainf'.
+% ARGS6 = cell(1,1);
+% ARGS6{1} = cell(50,1);
+% ARGS6{1}{1} = struct;
+% ARGS6{1}{1}.nzsplines = coder.typeof(int64(0),[Inf  1],[1 0]);
+% ARGS6{1}{1} = coder.typeof(ARGS6{1}{1},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{2} = coder.typeof(0,[Inf  4  4],[1 0 0]);
+% ARGS6{1}{3} = coder.typeof(0,[Inf  4  4],[1 0 0]);
+% ARGS6{1}{4} = coder.typeof(0,[Inf  4  4],[1 0 0]);
+% ARGS6{1}{5} = coder.typeof(0,[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{6} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{7} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{8} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{9} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{10} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{11} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{12} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{13} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{14} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{15} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{16} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{17} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{18} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{19} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{20} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{21} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{22} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{23} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{24} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{25} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{26} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{27} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{28} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{29} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{30} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{31} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{32} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{33} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{34} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS6{1}{35} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS6{1}{36} = coder.typeof(0,[Inf  4],[1 0]);
+% 
+% ARGS6{1}{37} = struct;
+% ARGS6{1}{37}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS6{1}{37} = coder.typeof(ARGS6{1}{37},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{38} = struct;
+% ARGS6{1}{38}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS6{1}{38} = coder.typeof(ARGS6{1}{38},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{39} = struct;
+% ARGS6{1}{39}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS6{1}{39} = coder.typeof(ARGS6{1}{39},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{40} = struct;
+% ARGS6{1}{40}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS6{1}{40} = coder.typeof(ARGS6{1}{40},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{41} = struct;
+% ARGS6{1}{41}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS6{1}{41} = coder.typeof(ARGS6{1}{41},[Inf  1],[1 0]);
+% 
+% ARGS6{1}{42} = coder.typeof(0);
+% ARGS6{1}{43} = coder.typeof(0);
+% ARGS6{1}{44} = coder.typeof(0);
+% 
+% ARGS6{1}{45} = coder.typeof(0);
+% ARGS6{1}{46} = coder.typeof(0);
+% 
+% ARGS6{1}{47} = coder.typeof(0,[Inf  1],[1 0]);
+% ARGS6{1}{48} = coder.typeof(0,[Inf  1],[1 0]);
+% ARGS6{1}{49} = coder.typeof(0,[Inf  1],[1 0]);
+% 
+% ARGS6{1}{50} = coder.typeof(single(0),[Inf  3],[1 0]);
+% %% Invoke MATLAB Coder.
+% codegen -config cfg compute_Integ_Domainf_fid -args ARGS6{1}
+% 
+% %% Define argument types for entry-point 'compute_Integ_Domainb_mod'.
+% ARGS7 = cell(1,1);
+% ARGS7{1} = cell(45,1);
+% ARGS7{1}{1} = struct;
+% ARGS7{1}{1}.nzsplines = coder.typeof(int64(0),[Inf  1],[1 0]);
+% ARGS7{1}{1} = coder.typeof(ARGS7{1}{1},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{2} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{3} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{4} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{5} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{6} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{7} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{8} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{9} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{10} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{11} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{12} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{13} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{14} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{15} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{16} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{17} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{18} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{19} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{20} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{21} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{22} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{23} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{24} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{25} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{26} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{27} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{28} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{29} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{30} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% ARGS7{1}{31} = coder.typeof(single(0),[Inf  4  4],[1 0 0]);
+% 
+% ARGS7{1}{32} = coder.typeof(0,[Inf  4],[1 0]);
+% 
+% ARGS7{1}{33} = struct;
+% ARGS7{1}{33}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS7{1}{33} = coder.typeof(ARGS7{1}{33},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{34} = struct;
+% ARGS7{1}{34}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS7{1}{34} = coder.typeof(ARGS7{1}{34},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{35} = struct;
+% ARGS7{1}{35}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS7{1}{35} = coder.typeof(ARGS7{1}{35},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{36} = struct;
+% ARGS7{1}{36}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS7{1}{36} = coder.typeof(ARGS7{1}{36},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{37} = struct;
+% ARGS7{1}{37}.mat = coder.typeof(single(0),[Inf  4  4  4],[1 0 0 0]);
+% ARGS7{1}{37} = coder.typeof(ARGS7{1}{37},[Inf  1],[1 0]);
+% 
+% ARGS7{1}{38} = coder.typeof(0);
+% ARGS7{1}{39} = coder.typeof(0);
+% 
+% ARGS7{1}{40} = coder.typeof(0);
+% 
+% ARGS7{1}{41} = coder.typeof(0);
+% 
+% ARGS7{1}{42} = coder.typeof(0,[Inf  1],[1 0]);
+% ARGS7{1}{43} = coder.typeof(0,[Inf  1],[1 0]);
+% ARGS7{1}{44} = coder.typeof(0,[Inf  1],[1 0]);
+% 
+% ARGS7{1}{45} = coder.typeof(single(0),[Inf  3],[1 0]);
+% %% Invoke MATLAB Coder.
+% codegen -config cfg compute_Integ_Domainb_fid -args ARGS7{1}
 
 %% Define argument types for entry-point 'BsplineCompose3D'.
 ARGS8 = cell(1,1);
